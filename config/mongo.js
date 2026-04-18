@@ -5,7 +5,7 @@ const connectDb = async () => {
   try {
     const { MONGO_USER, MONGO_PASSWORD, MONGO_HOST, MONGO_PORT, MONGO_MAIN_DB, MONGO_URI } = process.env
     const mongoUri = MONGO_URI
-      ? MONGO_URI + `/${MONGO_MAIN_DB}?authSource=admin`
+      ? MONGO_URI
       : `mongodb://${MONGO_USER && MONGO_USER.length ? `${MONGO_USER}:${MONGO_PASSWORD}@` : ''}` +
         `${MONGO_HOST}:${MONGO_PORT}/${MONGO_MAIN_DB}?authSource=admin`
     
