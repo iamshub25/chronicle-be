@@ -1,12 +1,12 @@
 const express = require("express");
-const Responder = require("@service/ResponderService");
+const Responder = require("../services/ResponderService");
 
-const serverRouter = require("@module/server/routes");
-const ruleRouter = require("@module/rule/routes");
-const rankRouter = require("@module/rank/routes");
-const staffRouter = require("@module/staff/routes");
-const authRouter = require("@module/auth/routes");
-const settingRouter = require("@module/setting/routes");
+const serverRouter = require("../modules/server/routes");
+const ruleRouter = require("../modules/rule/routes");
+const rankRouter = require("../modules/rank/routes");
+const staffRouter = require("../modules/staff/routes");
+const authRouter = require("../modules/auth/routes");
+const settingRouter = require("../modules/setting/routes");
 const passport = require("passport");
 
 const router = express.Router();

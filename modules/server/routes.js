@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
-const Server = require("@model/Server");
-const Responder = require("@service/ResponderService");
+const Server = require("../../models/Server");
+const Responder = require("../../services/ResponderService");
 
 const router = express.Router();
 

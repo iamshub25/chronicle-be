@@ -1,6 +1,6 @@
 const express = require("express");
-const Rank = require("@model/Rank");
-const Responder = require("@service/ResponderService");
+const Rank = require("../../models/Rank");
+const Responder = require("../../services/ResponderService");
 
 const router = express.Router();
 

@@ -1,6 +1,6 @@
 const express = require("express");
-const Rule = require("@model/Rule");
-const Responder = require("@service/ResponderService");
+const Rule = require("../../models/Rule");
+const Responder = require("../../services/ResponderService");
 
 const router = express.Router();
 
