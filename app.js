@@ -1,7 +1,8 @@
+require('module-alias/register');
+
 const express = require('express');
 const cors = require('cors');
 const passport = require('passport');
-const moduleAlias = require('module-alias/register');
 
 const routes = require('./config/routes');
 require('./config/mongo')(); // Setup mongo connection
